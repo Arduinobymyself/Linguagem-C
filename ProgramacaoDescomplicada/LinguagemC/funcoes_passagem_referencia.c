@@ -2,7 +2,7 @@
 Título:
 Autor: Eng. Marcelo Moraes
 Local: Sorocaba - SP
-Data: Dezembro de 2022
+Data: Janeiro 2023
 Descrição: Aulas do curso de Linguagem C ANSI
 Observações:
 	aula048 - Funções - Passagem por referência
