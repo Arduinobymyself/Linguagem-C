@@ -5,7 +5,7 @@ Local: Sorocaba - SP
 Data: Dezembro de 2022
 Descrição: Aulas do curso de Linguagem C ANSI
 Observações:
-
+		aula049 - Funções - Array como Parâmetro
 
 
 
