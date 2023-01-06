@@ -18,9 +18,9 @@ Observações:
 
 // --- definição de parâmetros --- //
 
-// --- protóritpo das funções auxiliares --- //
+// --- estruturas e variáveis globais --- //
 
-// --- variáveis globais --- //
+// --- protóritpo das funções auxiliares --- //
 
 // --- programa principal --- //
 int main(){
