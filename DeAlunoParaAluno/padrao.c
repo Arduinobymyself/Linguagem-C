@@ -13,7 +13,6 @@ Observações:
 #include <stdlib.h>
 #include <locale.h>
 #include <string.h>
-#include <math.h>
 
 // --- definição de parâmetros --- //
 
@@ -32,7 +31,7 @@ int main(int argc, char *argv[]){
 
 
 	printf("\n\n");
-	system("pause");
+	//system("pause");
 	return 0;
 }
 

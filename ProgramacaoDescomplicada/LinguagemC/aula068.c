@@ -2,9 +2,10 @@
 Título:
 Autor: 			Eng. Marcelo Moraes
 Local: 			Sorocaba - SP
-Data: 			Fevereiro 2023
+Data: 			Janeiro 2023
 Descrição: 		Aulas do curso de Linguagem C ANSI
 Observações:
+
 
 */
 
@@ -12,8 +13,6 @@ Observações:
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <string.h>
-#include <math.h>
 
 // --- definição de parâmetros --- //
 
@@ -22,17 +21,34 @@ Observações:
 // --- protóritpo das funções auxiliares --- //
 
 // --- programa principal --- //
-int main(int argc, char *argv[]){
+int main(){
 	setlocale(LC_ALL, "Portuguese");
-	system("cls");
 	printf("\n\n");
 	
+	FILE *f;
+	
+	// abre o arquivo para escrita "w" write devolve um ponteiro para arquivo
+	f = fopen("arquivo.txt", "w");
+	 
+	// C:\Users\ABMS-Telecom\Documents\GitHub\Linguagem-C
+	if(f == NULL){ // verifica se o arquivo foi aberto com sucesso
+		printf("Erro na abertura!\n");
+		system("pause");
+		exit(1); // aborta o programa
+	} else {
+		printf("Abertura bem sucedida!\n");
+	}
+	
+	fclose(f);
+	
 
-	// SEU CÓDIGO AQUI
+	
+	
+
 
 
 	printf("\n\n");
-	system("pause");
+	//system("pause");
 	return 0;
 }
 

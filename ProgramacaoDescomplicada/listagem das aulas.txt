@@ -1,0 +1,136 @@
+
+
+VÍDEO AULAS DO CANAL PROGRAMAÇÃO DESCOMPLICADA PROF. ANDRÉ BACKES 
+
+001 - Esqueleto de um program em C
+002 - Declaração de variáveis
+003 - Comando printf()
+004 - Comando scanf()
+005 - Operador de atribuição
+006 - Constantes
+007 - Operadores aritméticos
+008 - Comentários
+009 - Pré e pós incremento
+010 - Atribuição simplificada
+011 - Operadores relacionais
+012 - Operadores lógicos
+013 - Comando if()
+014 - Comando else
+015 - Aninhamento if() else
+016 - Operador ternário ?
+017 - Comando switch()
+018 - Comando while()
+019 - Comando for()
+020 - Comando do-while()
+021 - Aninhamento de repetições
+022 - Comando break
+023 - Comando continue
+024 - comando goto
+025 - Array / vetor
+026 - Array / matriz
+027 - Array multidimensional
+028 - Inicialização de arrays
+029 - Somando um array
+030 - Maior valor de um array
+031 - Strings: Conceitos básicos
+032 - Strings: Biblioteca string.h
+033 - Strings: Invertendo uma string
+034 - String: Contando caracteres
+035 - Introdução as estruturas (struct)
+036 - Trabalhando com estruturas
+037 - Arrays de structs
+038 - Aninhamento de structs
+039 - Union
+040 - Union: Exemplos
+041 - Enum
+042 - Typedef()
+043 - Função: Visão geral
+044 - Parâmetros da função
+045 - Corpo de uma função
+046 - Retorno de uma função
+047 - Função: Passagem por valor
+048 - Função: Passagem por referência
+049 - Função: Array como parâmetro
+050 - Função: Struct como parâmetro
+051 - Recursão: Definição
+052 - Recursão: Funcionamento
+053 - Recursão: Cuidados
+054 - Recursão: Exemplos
+055 - Ponteiros: Conceitos
+056 - Ponteiros: Operações
+057 - Ponteiros: Genérico
+058 - Ponteiros e arrays
+059 - Ponteiro para ponteiro
+060 - Alocação dinâmica: Introdução
+061 - Alocação dinâmica: sizeof()
+062 - Alocação dinâmica: malloc()
+063 - Alocação dinâmica: calloc()
+064 - Alocação dinâmica: realloc()
+065 - Alocação dinâmica: Alocação de matrizes
+066 - Arquivos: Introdução
+067 - Arquivos: Arquivos de texto e binário
+068 - Arquivos: Abrir e fechar
+069 - Arquivos: fputc()
+070 - Arquivos: fgetc()
+071 - Arquivos: Trabalhando com arquivos
+072 - Arquivos: A constante EOF
+073 - Arquivos: fputs()
+074 - Arquivos: fgets()
+075 - Arquivos: fwrite()
+076 - Arquivos: fread()
+077 - Arquivos: fprintf()
+078 - Arquivos: fscanf()
+079 - Arquivos: fseek() e rewind()
+080 - Parâmetros da main()
+081 - Limpar o buffer do teclado
+082 - Exercício: Triângulo de Floyd
+083 - Exercício: Achar o número divisível por cada um dos números de 1 a 10
+084 - Exercício: Calculando o número de Euler, e
+085 - Exercício: Cálculo de Cosseno
+086 - Exercício: Cálculo de uma série S
+087 - Exercício: Calculando a média de umarray
+088 - Exercício: Cálculo de média e desvio padrão de um array
+089 - Exercício: Lendo uma lista de compras de um arquivo e somando valores
+090 - Mau uso da função feof()
+091 - Mudando a localidade do computador
+092 - Classes de armazenamento
+093 - Modificador volatile
+094 - Ponteiro para função
+095 - Campo de bits com structs
+096 - Array de ponteiros e ponteiro de array
+097 - Funções com número de parâmetro variável
+098 - Diretiva #define - Funções macros
+099 - Diretivas de inclusão condicional
+0100 - Manipulação de memória - parte 1
+0101 - Manipulação de memória - parte 2
+0102 - Alinhamento e preenchimento de estruturas - parte 1
+0103 - Alinhamento e preenchimento de estruturas - parte 2
+0104 - O padrão C99
+0105 - [C99] O tipo long int
+0106 - [C99] Novos tipos inteiros
+0107 - [C99] O tipo booleano
+0108 - [C99] O tipo complexo
+0109 - [C99] Ponto flutuante padrão IEEE754
+0110 - [C99] Funções matemáticas de tipo genérico
+0111 - [C99] Arrays de comprimento variável
+0112 - [C99] Campo de arrays flexível dentro de estruturas
+0113 - [C99] Funções em linha
+0114 - [C99] A palavra-chave restrict
+0115 - [C99] Inicialização designada
+0116 - [C99] Literias compostos
+0117 - Pacman em linguagem C com OpenGL
+0118 - Usando a função strtok()
+0119 - String em C: gets() vs fgets()
+0120 - Criando Doom em linguagem C e OpenGL (versão 1)
+0121 - Criando Doom em linguagem C e OpenGL (versão 2)
+0122 - Criando Doom em linguagem C e OpenGL (versão 3)
+0123 - Criando Doom em linguagem C e OpenGL (versão 4)
+0124 - Exercício: multiplos de x em um vetor
+0125 - Exercício: Produto escalar de dois vetores
+0126 - Exercício: Maior valor de uma matriz
+0127 - Exercício: Trasnposta de uma matriz
+0128 - Exercício: Soma dos elementos acima da diagonal principal da matriz
+0129 - Exercício: Função para calcular o volume de uma esfera
+0130 - Exercício: Função para converter horas, minutos e segundos em segundos
+0131 - Exercício: Função para converter Celsius em Fahrenheit
+0132 - Exercício: Função para calcular a hipotenusa

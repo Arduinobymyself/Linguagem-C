@@ -13,13 +13,13 @@ Observações:
 #include <stdlib.h>
 #include <locale.h>
 #include <string.h>
-#include <math.h>
 
 // --- definição de parâmetros --- //
 
 // --- estruturas e variáveis globais --- //
 
 // --- protóritpo das funções auxiliares --- //
+void imprimeMatriz(int mat[][3]);
 
 // --- programa principal --- //
 int main(int argc, char *argv[]){
@@ -27,8 +27,11 @@ int main(int argc, char *argv[]){
 	system("cls");
 	printf("\n\n");
 	
-
-	// SEU CÓDIGO AQUI
+	int matriz[3][3] = {{1, 2, 3},
+						{4, 5, 6},
+						{7, 8, 9}};
+						
+	imprimeMatriz(matriz);
 
 
 	printf("\n\n");
@@ -37,4 +40,13 @@ int main(int argc, char *argv[]){
 }
 
 // --- desenvolvimento das funções auxiliares --- //
+void imprimeMatriz(int mat[][3]){
+	int i, j;
+	for(i=0; i<3; i++){
+		for(j=0; j<3; j++){
+			printf("%d ", mat[i][j]);
+		}
+		printf("\n");
+	}	
+}
 

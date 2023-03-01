@@ -13,7 +13,6 @@ Observações:
 #include <stdlib.h>
 #include <locale.h>
 #include <string.h>
-#include <math.h>
 
 // --- definição de parâmetros --- //
 
@@ -28,11 +27,19 @@ int main(int argc, char *argv[]){
 	printf("\n\n");
 	
 
-	// SEU CÓDIGO AQUI
+	int N = 6;
+	int i, j, cont = 0;
+	for(i=0; i<= N; i++){
+		for(j=1; j<= i; j++){
+			cont++;
+			printf("%d ", cont);
+		}
+		printf("\n");
+	}
 
 
 	printf("\n\n");
-	system("pause");
+	//system("pause");
 	return 0;
 }
 

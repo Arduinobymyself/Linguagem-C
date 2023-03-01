@@ -14,6 +14,7 @@ Observações:
 #include <locale.h>
 #include <string.h>
 #include <math.h>
+#include <time.h>
 
 // --- definição de parâmetros --- //
 
@@ -23,12 +24,31 @@ Observações:
 
 // --- programa principal --- //
 int main(int argc, char *argv[]){
-	setlocale(LC_ALL, "Portuguese");
+	//setlocale(LC_ALL, "Portuguese");
 	system("cls");
 	printf("\n\n");
 	
 
-	// SEU CÓDIGO AQUI
+	float f = 3.45;
+	time_t tempo;
+	struct tm *infotempo;
+	char texto[80];
+	time(&tempo);
+	infotempo = localtime(&tempo);
+	
+	printf("Hello World!\n");
+	printf("Valor de f = %f\n", f);
+	strftime(texto, 80, "Data %A, %d/%b/%Y", infotempo);
+	puts(texto);
+	printf("\n\n");
+	
+	setlocale(LC_ALL, "ptb"); // muda localidade de todo o ambiente para português br
+	
+	printf("Hello World!\n");
+	printf("Valor de f = %f\n", f);
+	strftime(texto, 80, "Data %A, %d/%b/%Y", infotempo);
+	puts(texto);
+	printf("\n\n");
 
 
 	printf("\n\n");

@@ -13,13 +13,13 @@ Observações:
 #include <stdlib.h>
 #include <locale.h>
 #include <string.h>
-#include <math.h>
 
 // --- definição de parâmetros --- //
 
 // --- estruturas e variáveis globais --- //
 
 // --- protóritpo das funções auxiliares --- //
+float serieS(int n);
 
 // --- programa principal --- //
 int main(int argc, char *argv[]){
@@ -28,7 +28,7 @@ int main(int argc, char *argv[]){
 	printf("\n\n");
 	
 
-	// SEU CÓDIGO AQUI
+	printf("Série S = %f\n", serieS(5));
 
 
 	printf("\n\n");
@@ -37,4 +37,12 @@ int main(int argc, char *argv[]){
 }
 
 // --- desenvolvimento das funções auxiliares --- //
+
+float serieS(int n){
+	if(n>0){
+		return (1+n*n)/(float)n+serieS(n-1);
+	} else{
+		return 0;
+	}
+}
 

@@ -2,10 +2,9 @@
 Título:
 Autor: 			Eng. Marcelo Moraes
 Local: 			Sorocaba - SP
-Data: 			Fevereiro 2023
+Data: 			Janeiro 2023
 Descrição: 		Aulas do curso de Linguagem C ANSI
 Observações:
-
 */
 
 // --- inclusão de bibliotecas --- //
@@ -13,7 +12,6 @@ Observações:
 #include <stdlib.h>
 #include <locale.h>
 #include <string.h>
-#include <math.h>
 
 // --- definição de parâmetros --- //
 
@@ -22,17 +20,31 @@ Observações:
 // --- protóritpo das funções auxiliares --- //
 
 // --- programa principal --- //
-int main(int argc, char *argv[]){
+int main(){
 	setlocale(LC_ALL, "Portuguese");
-	system("cls");
 	printf("\n\n");
 	
-
-	// SEU CÓDIGO AQUI
-
+	FILE *f1, *f2;
+	f1 = fopen("minusculo.txt", "r");
+	f2 = fopen("maiusculo.txt", "w");
+	if(f1 == NULL || f2 == NULL){
+		printf("Erro na abertura dos arquivos\n");
+		system("pause");
+		exit(1);
+	}
+	
+	char c = fgetc(f1);
+	while(c != EOF){
+		fputc(toupper(c), f2);
+		c = fgetc(f1);
+	}
+	fclose(f1);
+	fclose(f2);
+	printf("Processo finalizado!\n");
+	
 
 	printf("\n\n");
-	system("pause");
+	//system("pause");
 	return 0;
 }
 

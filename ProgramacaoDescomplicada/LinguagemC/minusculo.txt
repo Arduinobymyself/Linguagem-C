@@ -1,0 +1,4 @@
+Meu primeiro programa em linguagem C
+C é uma linguagem complicada, de propósito geral, estruturada, imperativa,
+procedural, padronizada pela ISO, criada em 1972, por Dennis Ritchie,
+no AT&T Bell Labs.

@@ -13,7 +13,6 @@ Observações:
 #include <stdlib.h>
 #include <locale.h>
 #include <string.h>
-#include <math.h>
 
 // --- definição de parâmetros --- //
 
@@ -28,7 +27,20 @@ int main(int argc, char *argv[]){
 	printf("\n\n");
 	
 
-	// SEU CÓDIGO AQUI
+	char produtos[30];
+	float qtde, valor, total = 0;
+	FILE *fp = fopen("compras.txt", "r");
+	if(fp == NULL){
+		printf("Erro na abertura do arquivos.\n");
+		system("pause");
+		exit(1);
+	}
+	while(!feof(fp)){
+		fscanf(fp, "%s		%f	%f", produtos, &qtde, &valor);
+		total += qtde*valor;
+	}
+	printf("Total = %f\n", total);
+	
 
 
 	printf("\n\n");

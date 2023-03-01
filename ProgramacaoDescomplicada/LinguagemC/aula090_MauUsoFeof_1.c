@@ -20,15 +20,29 @@ Observações:
 // --- estruturas e variáveis globais --- //
 
 // --- protóritpo das funções auxiliares --- //
+void salva(){
+	int v[5] = {10, 20, 30, 40, 50};
+	int i;
+	FILE *fp = fopen("teste_feof.txt", "w");
+	if(fp == NULL){
+		printf("Erro na abertura do arquivo!\n");
+		system("pause");
+		exit(1);
+	}
+	for(i=0; i<5; i++){
+		fprintf(fp, "%d\n", v[i]);
+	}
+	fclose(fp);
+}
 
 // --- programa principal --- //
 int main(int argc, char *argv[]){
-	setlocale(LC_ALL, "Portuguese");
+	setlocale(LC_ALL, "ptb");
 	system("cls");
 	printf("\n\n");
 	
 
-	// SEU CÓDIGO AQUI
+	salva();
 
 
 	printf("\n\n");

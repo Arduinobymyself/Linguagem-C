@@ -5,7 +5,6 @@ Local: 			Sorocaba - SP
 Data: 			Fevereiro 2023
 Descrição: 		Aulas do curso de Linguagem C ANSI
 Observações:
-
 */
 
 // --- inclusão de bibliotecas --- //
@@ -13,7 +12,6 @@ Observações:
 #include <stdlib.h>
 #include <locale.h>
 #include <string.h>
-#include <math.h>
 
 // --- definição de parâmetros --- //
 
@@ -22,17 +20,41 @@ Observações:
 // --- protóritpo das funções auxiliares --- //
 
 // --- programa principal --- //
-int main(int argc, char *argv[]){
+int main(){
 	setlocale(LC_ALL, "Portuguese");
-	system("cls");
 	printf("\n\n");
 	
 
-	// SEU CÓDIGO AQUI
+	FILE *f;
+	f = fopen("arquivo.txt", "w")	;
+	if(f == NULL){
+		printf("Erro na abertura do arquivo!\n");
+		system("pause");
+		exit(1);
+	}
+	char texto[50] = "Meu primeiro programa em linguagem C 2023";
+	int retorno = fputs(texto, f);
+	if(retorno == EOF){
+		printf("Erro na gravação do arquivo!\n");
+	} else{
+		printf("Arquivo gravado com seucesso!\n");
+	}
+	
+	fputc('\n', f);
+	fputs("Marcelo", f);
+	fputc('\n', f);
+	fputs("Moraes", f);
+	
+	fputs("\nHello", f);
+	fputs("\nWorld", f);
+	
+	fclose(f);
+	
+
 
 
 	printf("\n\n");
-	system("pause");
+	//system("pause");
 	return 0;
 }
 

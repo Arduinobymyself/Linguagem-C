@@ -5,6 +5,9 @@ Local: 			Sorocaba - SP
 Data: 			Fevereiro 2023
 Descrição: 		Aulas do curso de Linguagem C ANSI
 Observações:
+	Programa para calcular o número de Euler "e"
+	Dado um número inteiro e positivo N, calcular o número de Euler segundo a fórmula:
+	e = 1 + 1/1! + 1/2! + 1/3! + .... + 1/N!
 
 */
 
@@ -13,7 +16,6 @@ Observações:
 #include <stdlib.h>
 #include <locale.h>
 #include <string.h>
-#include <math.h>
 
 // --- definição de parâmetros --- //
 
@@ -28,11 +30,22 @@ int main(int argc, char *argv[]){
 	printf("\n\n");
 	
 
-	// SEU CÓDIGO AQUI
+	int N = 10;
+	int i, j;
+	float f, E = 1.0;
+	
+	for(i=1; i<=N; i++){
+		f = 1;
+		for(j=1; j<=i; j++){
+			f = f * j;
+		}
+		E = E + 1.0 / f;
+	}
+	printf("E = %f\n", E); // 2.718282
 
 
 	printf("\n\n");
-	system("pause");
+	//system("pause");
 	return 0;
 }
 
