@@ -12,8 +12,7 @@ Observações:
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <string.h>
-#include <math.h>
+
 
 // --- definição de parâmetros --- //
 
@@ -28,8 +27,24 @@ int main(int argc, char *argv[]){
 	printf("\n\n");
 
 
+	int mat[3][3], i, j, soma = 0;
 
-	//SEU CÓDIGO AQUI
+	for(i=0; i<3; i++){
+        for(j=0; j<3; j++){
+            printf("Digite o valor da posição [%d][%d]", i, j);
+            scanf("%d", &mat[i][j]);
+        }
+	}
+
+	for(i=0; i<3; i++){
+        for(j=0; j<3; j++){
+            if(j > i){
+                soma = soma + mat[i][j];
+            }
+        }
+	}
+
+	printf("\nSoma = %d\n", soma);
 
 
 

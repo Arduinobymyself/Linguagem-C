@@ -12,6 +12,7 @@ Observações:
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include "Ponto.h"
 //#include <string.h>
 //#include <math.h>
 
@@ -29,6 +30,14 @@ int main(int argc, char *argv[]){
 	
 
 	// SEU CÓDIGO AQUI
+	float d;
+	Ponto *p, *q;
+	p = cria_pto(10,21);
+	q = cria_pto(7, 25);
+	d = distancia_pto(p,q);
+	printf("Distância entre pontos: %f\n", d);
+	libera_pto(p);
+	libera_pto(q);
 
 
 

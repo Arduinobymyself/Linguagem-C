@@ -24,17 +24,30 @@ Observações:
 // --- programa principal --- //
 int main(int argc, char *argv[]){
 	setlocale(LC_ALL, "Portuguese");
-	system("cls");
 	printf("\n\n");
 
 
+	int vetor[10], i, x, qtde = 0;
 
-	//SEU CÓDIGO AQUI
+	for(i=0; i<10; i++){
+        printf("Digite o valor da posição %d: ", i);
+        scanf("%d", &vetor[i]);
+	}
 
+	printf("Digite x: ");
+	scanf("%d", &x);
+
+	for(i=0; i<10; i++){
+        if(vetor[i] % x == 0){
+            printf("%d\n", vetor[i]);
+            qtde++;
+        }
+	}
+
+	printf("Qtde = %d\n", qtde);
 
 
 	printf("\n\n");
-	system("pause");
 	return 0;
 }
 

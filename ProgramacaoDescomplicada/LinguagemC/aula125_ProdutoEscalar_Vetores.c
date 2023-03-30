@@ -1,3 +1,4 @@
+
 /*
 Título:
 Autor: 			Eng. Marcelo Moraes
@@ -12,8 +13,6 @@ Observações:
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <string.h>
-#include <math.h>
 
 // --- definição de parâmetros --- //
 
@@ -24,17 +23,29 @@ Observações:
 // --- programa principal --- //
 int main(int argc, char *argv[]){
 	setlocale(LC_ALL, "Portuguese");
-	system("cls");
 	printf("\n\n");
 
 
+	float x[5], y[5], prod = 0;
+	int i;
 
-	//SEU CÓDIGO AQUI
+	for(i=0; i<5; i++){
+        printf("Digite o valor da posição X[%d]: ", i);
+        scanf("%f", &x[i]);
+	}
 
+    for(i=0; i<5; i++){
+        printf("Digite o valor da posição Y[%d]: ", i);
+        scanf("%f", &y[i]);
+	}
 
+	for(i=0; i<5; i++){
+        prod = prod + x[i] * y[i];
+	}
+
+	printf("O produto escalar = %.2f\n:", prod);
 
 	printf("\n\n");
-	system("pause");
 	return 0;
 }
 

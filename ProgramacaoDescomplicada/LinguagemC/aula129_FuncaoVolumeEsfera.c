@@ -20,6 +20,7 @@ Observações:
 // --- estruturas e variáveis globais --- //
 
 // --- protóritpo das funções auxiliares --- //
+float volume_esfera(float R);
 
 // --- programa principal --- //
 int main(int argc, char *argv[]){
@@ -30,6 +31,10 @@ int main(int argc, char *argv[]){
 
 
 	//SEU CÓDIGO AQUI
+	float R;
+	printf("Digite o rio da esfera: ");
+    scanf("%f", &R);
+    printf("Volume da esfera de raio %.2f = %.2f", R, volume_esfera(R));
 
 
 
@@ -39,4 +44,9 @@ int main(int argc, char *argv[]){
 }
 
 // --- desenvolvimento das funções auxiliares --- //
+float volume_esfera(float R){
+    float V;
+    V = 4.0/3.0*3.1415926*pow(R,3);
+    return V;
+}
 

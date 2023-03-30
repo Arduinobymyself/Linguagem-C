@@ -10,9 +10,7 @@ Observações:
 
 // --- inclusão de bibliotecas --- //
 #include <stdio.h>
-#include <stdlib.h>
 #include <locale.h>
-#include <string.h>
 #include <math.h>
 
 // --- definição de parâmetros --- //
@@ -20,6 +18,7 @@ Observações:
 // --- estruturas e variáveis globais --- //
 
 // --- protóritpo das funções auxiliares --- //
+float hipotenusa(float a, float b);
 
 // --- programa principal --- //
 int main(int argc, char *argv[]){
@@ -30,6 +29,11 @@ int main(int argc, char *argv[]){
 
 
 	//SEU CÓDIGO AQUI
+	float a, b, h;
+	printf("Entre com os valores dos catetos A e B: ");
+	scanf("%f %f", &a, &b);
+	h = hipotenusa(a, b);
+	printf("Hipotenusa = %.2f\n", h);
 
 
 
@@ -39,4 +43,6 @@ int main(int argc, char *argv[]){
 }
 
 // --- desenvolvimento das funções auxiliares --- //
-
+float hipotenusa(float a, float b){
+    return sqrt(pow(a,2)+pow(b,2));
+}

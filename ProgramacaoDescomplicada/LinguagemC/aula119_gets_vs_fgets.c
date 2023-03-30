@@ -10,10 +10,9 @@ Observações:
 
 // --- inclusão de bibliotecas --- //
 #include <stdio.h>
-#include <stdlib.h>
 #include <locale.h>
 #include <string.h>
-#include <math.h>
+
 
 // --- definição de parâmetros --- //
 
@@ -24,17 +23,28 @@ Observações:
 // --- programa principal --- //
 int main(int argc, char *argv[]){
 	setlocale(LC_ALL, "Portuguese");
-	system("cls");
+	//system("cls");
 	printf("\n\n");
 
 
+	char senha[10];
+	int flag = 0;
 
-	//SEU CÓDIGO AQUI
+	printf("Digite a senha: ");
+	//gets(senha);
+	fgets(senha, 10,stdin);
 
+	if(strcmp(senha, "1234") == 0) flag = 1;
+
+	if(flag){
+        printf("ACESSO APROVADO!\n");
+	} else {
+        printf("ACESSO NEGADO!\n");
+	}
 
 
 	printf("\n\n");
-	system("pause");
+	//system("pause");
 	return 0;
 }
 

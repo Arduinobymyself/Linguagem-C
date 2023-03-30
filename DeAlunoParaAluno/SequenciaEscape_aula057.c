@@ -12,8 +12,7 @@ Observações:
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-//#include <string.h>
-//#include <math.h>
+#include <string.h>
 
 // --- definição de parâmetros --- //
 
@@ -29,12 +28,26 @@ int main(int argc, char *argv[]){
 	
 
 	// SEU CÓDIGO AQUI
+	/*
+	Sequencias de scape
+	\a alarme sonoro do sistema
+	\b move o cursor uma posição à esquerda
+	\n pula para a próxima linha
+	\t tabulação
+	\r volta para o início da linha
+	\0 caracter nulo
+	\" caractere "
+	\' caractere '
+	\\ caractere \
+	*/
+	
+	printf("Erro!\a\n");
+	printf("\rMarcelo\t Pinto\t de\t Moraes \"BIGDOG\"");
 
 
 
 	printf("\n\n");
-	// getchar(); //  melhor do que system("pause");
-	//system("pause");
+	getchar();
 	return 0;
 }
 

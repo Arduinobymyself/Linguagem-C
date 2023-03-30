@@ -28,8 +28,30 @@ int main(int argc, char *argv[]){
 	printf("\n\n");
 
 
+	int mat[4][4], i, j, maior;
+	int linha = 0, coluna = 0;
 
-	//SEU CÓDIGO AQUI
+	for(i=0; i<4; i++){
+        for(j=0; j<4; j++){
+            printf("Digita a posição [%d][%d]: ", i, j);
+            scanf("%d", &mat[i][j]);
+        }
+	}
+
+	maior = mat[0][0];
+
+	for(i=0; i<4; i++){
+        for(j=0; j<4; j++){
+            if(mat[i][j] > maior){
+                maior = mat[i][j];
+                linha = i;
+                coluna = j;
+            }
+        }
+	}
+
+	printf("Maior: %d\n", maior);
+	printf("Posição [%d][%d]\n", linha, coluna);
 
 
 

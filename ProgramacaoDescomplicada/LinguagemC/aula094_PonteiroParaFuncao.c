@@ -12,14 +12,17 @@ Observações:
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-//#include <string.h>
-//#include <math.h>
+#include <string.h>
+#include <math.h>
 
 // --- definição de parâmetros --- //
 
 // --- estruturas e variáveis globais --- //
 
 // --- protóritpo das funções auxiliares --- //
+int soma(int a, int b){
+	return a+b;
+}
 
 // --- programa principal --- //
 int main(int argc, char *argv[]){
@@ -28,16 +31,19 @@ int main(int argc, char *argv[]){
 	printf("\n\n");
 	
 
-	// SEU CÓDIGO AQUI
-
+	int x, y, z;
+	int (*p)(int, int);
+	printf("Digite 2 números: ");
+	scanf("%d %d", &x, &y);
+	p = soma;
+	z = p(x, y);
+	printf("Soma = %d\n", z);
 
 
 	printf("\n\n");
-	// getchar(); //  melhor do que system("pause");
-	//system("pause");
+	system("pause");
 	return 0;
 }
 
 // --- desenvolvimento das funções auxiliares --- //
-
 

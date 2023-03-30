@@ -12,8 +12,7 @@ Observações:
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-//#include <string.h>
-//#include <math.h>
+#include <string.h>
 
 // --- definição de parâmetros --- //
 
@@ -29,11 +28,15 @@ int main(int argc, char *argv[]){
 	
 
 	// SEU CÓDIGO AQUI
+	char nome[30];
+	char sobreNome[30];
+	printf("Insira seu nome e sobrenome: ");
+	scanf("%s %s", &nome, &sobreNome);
+	printf("%s %s", nome, sobreNome);
 
 
 
 	printf("\n\n");
-	// getchar(); //  melhor do que system("pause");
 	//system("pause");
 	return 0;
 }

@@ -10,10 +10,8 @@ Observações:
 
 // --- inclusão de bibliotecas --- //
 #include <stdio.h>
-#include <stdlib.h>
 #include <locale.h>
 #include <string.h>
-#include <math.h>
 
 // --- definição de parâmetros --- //
 
@@ -24,19 +22,29 @@ Observações:
 // --- programa principal --- //
 int main(int argc, char *argv[]){
 	setlocale(LC_ALL, "Portuguese");
-	system("cls");
+	//system("cls");
 	printf("\n\n");
 
 
+	char str[100] = "palavra1.palavra2,palavra3 palavra4!";
+	char *sub;
+	char texto[20];
 
-	//SEU CÓDIGO AQUI
+	sub = strtok(str, " !.,");
+	while(sub != NULL){
+      printf("%s\n", sub);
+      strcmp(texto, sub);
+      sub = strtok(NULL, " !.,");
+	}
 
 
 
-	printf("\n\n");
-	system("pause");
+
+	printf("\nFIM\n");
+	//system("pause");
 	return 0;
 }
 
 // --- desenvolvimento das funções auxiliares --- //
+
 

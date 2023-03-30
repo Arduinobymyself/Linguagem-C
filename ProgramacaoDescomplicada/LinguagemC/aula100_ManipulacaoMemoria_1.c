@@ -12,8 +12,8 @@ Observações:
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-//#include <string.h>
-//#include <math.h>
+#include <string.h>
+
 
 // --- definição de parâmetros --- //
 
@@ -28,16 +28,18 @@ int main(int argc, char *argv[]){
 	printf("\n\n");
 	
 
-	// SEU CÓDIGO AQUI
-
+	char str[50] = "Exemplo de string em C";
+	puts(str);
+	
+	memset(str, '!', 7);
+	
+	puts(str);
 
 
 	printf("\n\n");
-	// getchar(); //  melhor do que system("pause");
-	//system("pause");
+	system("pause");
 	return 0;
 }
 
 // --- desenvolvimento das funções auxiliares --- //
-
 

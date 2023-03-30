@@ -20,6 +20,7 @@ Observações:
 // --- estruturas e variáveis globais --- //
 
 // --- protóritpo das funções auxiliares --- //
+int converte(int h, int m, int s);
 
 // --- programa principal --- //
 int main(int argc, char *argv[]){
@@ -30,7 +31,12 @@ int main(int argc, char *argv[]){
 
 
 	//SEU CÓDIGO AQUI
+	int h, m, s, t;
+	printf("Digite hora, minuto, segundo: ");
+	scanf("%d %d %d", &h, &m, &s);
 
+	t = converte(h, m, s);
+    printf("Tempo convertido para segundos: %d", t);
 
 
 	printf("\n\n");
@@ -39,4 +45,8 @@ int main(int argc, char *argv[]){
 }
 
 // --- desenvolvimento das funções auxiliares --- //
-
+int converte(int h, int m, int s){
+    int ts;
+    ts = s + m*60 + h*3600;
+    return ts;
+}

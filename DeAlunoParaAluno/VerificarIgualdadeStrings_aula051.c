@@ -12,8 +12,7 @@ Observações:
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-//#include <string.h>
-//#include <math.h>
+#include <string.h>
 
 // --- definição de parâmetros --- //
 
@@ -29,15 +28,33 @@ int main(int argc, char *argv[]){
 	
 
 	// SEU CÓDIGO AQUI
-
+	_Bool comparaStrings(char s1[], char s2[]);
+	
+	if(comparaStrings("casa", "casa")){
+		printf("São iguais\n");
+	} else{
+		printf("São diferentes\n");
+	}
 
 
 	printf("\n\n");
-	// getchar(); //  melhor do que system("pause");
 	//system("pause");
 	return 0;
 }
 
 // --- desenvolvimento das funções auxiliares --- //
+_Bool comparaStrings(char s1[], char s2[]){
+	int i = 0;
+	while(s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0'){
+		i++;
+	}		
+	if(s1[i] == '\0' && s2[i] == '\0'){
+		return 1;
+	} else{
+		return 0;
+	}
+}
+
+
 
 

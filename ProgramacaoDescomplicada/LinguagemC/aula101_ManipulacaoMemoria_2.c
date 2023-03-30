@@ -12,12 +12,14 @@ Observações:
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-//#include <string.h>
-//#include <math.h>
+#include <string.h>
+
+
 
 // --- definição de parâmetros --- //
 
 // --- estruturas e variáveis globais --- //
+
 
 // --- protóritpo das funções auxiliares --- //
 
@@ -28,16 +30,20 @@ int main(int argc, char *argv[]){
 	printf("\n\n");
 	
 
-	// SEU CÓDIGO AQUI
-
-
+	char str[50] = {"Exemplo de string em linguagem C."};
+	char *p;
+	p = (char*)memchr(str, 's', strlen(str));
+	if(p != NULL){
+		printf("Encontrado! Posição: %d\n", (p-str+1));
+	} else{
+		printf("Não encontrado!");
+	}
+	
 
 	printf("\n\n");
-	// getchar(); //  melhor do que system("pause");
-	//system("pause");
+	system("pause");
 	return 0;
 }
 
 // --- desenvolvimento das funções auxiliares --- //
-
 

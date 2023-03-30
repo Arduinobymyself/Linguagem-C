@@ -12,8 +12,7 @@ Observações:
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-//#include <string.h>
-//#include <math.h>
+#include <string.h>
 
 // --- definição de parâmetros --- //
 
@@ -29,11 +28,23 @@ int main(int argc, char *argv[]){
 	
 
 	// SEU CÓDIGO AQUI
+	int i;
+	
+	for(i=1; i<=100; i++){
+		if(i % 3 == 0 && i % 9 == 0){
+			printf("%d, divisível por 3 e 9\n", i);
+			//break; // mostra somente o primeiro número divisível por 3 e por 9
+				   // sem ele iria testar até 100 e ver todos os divisíveis
+		} else{
+			printf("%d, não é\n", i);
+		}
+	}
+	
+	getchar();
 
 
 
 	printf("\n\n");
-	// getchar(); //  melhor do que system("pause");
 	//system("pause");
 	return 0;
 }

@@ -28,8 +28,32 @@ int main(int argc, char *argv[]){
 	printf("\n\n");
 
 
+	int mat[3][3], transp[3][3], i, j;
 
-	//SEU CÓDIGO AQUI
+	for(i=0; i<3; i++){
+        for(j=0; j<3; j++){
+            printf("Digite o valor da posição [%d][%d]", i, j);
+            scanf("%d", &mat[i][j]);
+        }
+	}
+
+	printf("\nMatriz digitada:\n");
+	for(i=0; i<3; i++){
+        for(j=0; j<3; j++){
+            transp[j][i] = mat[i][j];
+            printf("%d ", mat[i][j]);
+        }
+        printf("\n");
+	}
+
+	printf("\nMatriz Transposta:\n");
+	for(i=0; i<3; i++){
+        for(j=0; j<3; j++){
+            printf("%d ", transp[i][j]);
+        }
+        printf("\n");
+	}
+
 
 
 

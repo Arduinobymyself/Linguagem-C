@@ -20,6 +20,7 @@ Observações:
 // --- estruturas e variáveis globais --- //
 
 // --- protóritpo das funções auxiliares --- //
+float converte_temp(float C);
 
 // --- programa principal --- //
 int main(int argc, char *argv[]){
@@ -30,7 +31,12 @@ int main(int argc, char *argv[]){
 
 
 	//SEU CÓDIGO AQUI
+	float C, F;
+	printf("digite a temperatura em graus Celsius: ");
+	scanf("%f", &C);
+	F = converte_temp(C);
 
+    printf("%.1f Celsius equivale a %.1f Fahrenheit", C, F);
 
 
 	printf("\n\n");
@@ -39,4 +45,6 @@ int main(int argc, char *argv[]){
 }
 
 // --- desenvolvimento das funções auxiliares --- //
-
+float converte_temp(float C){
+    return C*(9.0/5.0)+32.0;
+}
