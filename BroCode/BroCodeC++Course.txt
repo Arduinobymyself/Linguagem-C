@@ -1,0 +1,50 @@
+C++ Bro Code Course
+
+Const
+The const keyword specifies that a variable's value is constant
+tells the compiler to prevent anything from modifying it (read-only)
+
+Namespaces
+Provides a solution for preventing name conficts in large projects. Each entity 
+needs a unique name. A namespace allows for identically named entities
+as long as the namespaces are different.
+
+Typedef
+Reserved keyword used to create an additional name (alias) for another data type.
+New identifier for an existing type helps with redability and reduces typos.
+
+Arithmetic Operators
+Return the result of specific operation (+ - * / %)
+
+Type conversion
+Conversion a value of one data to another.
+Implicit = automatic
+Explicit = preced value with new data (int) (double) (char)
+
+User input
+cout << (insertion operator)
+cin >> (extraction operator)
+
+Useful math related function
+max(x,y)
+min(x, y)
+pow(x,y)
+sqrt(x)
+abs(x)
+round(x)
+ceil(x)
+floor(x)
+
+if() statements
+Do something if a condition is true, if not, then don't do it.
+
+switch()
+alternative to using many else if() statements
+compare one value against matching cases
+
+Ternary operator ?
+replacement to an if/else statements
+condition ? expression_1 : expression_2
+
+
+

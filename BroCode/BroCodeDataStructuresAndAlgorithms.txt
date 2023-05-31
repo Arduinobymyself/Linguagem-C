@@ -1,0 +1,38 @@
+
+Data structure: a named location that can be used to store 
+and organize data.
+Exmaple: array
+a collection of elements stored at contiguous memory locations.
+
+Algorithm: a collection of steps to solve a problem
+Example: Baking a pizza
+1. heat the oven to 550ºF
+2. knead the dough
+3. add toppings
+
+Another example: Linear search
+one by one, examine the elements of an array to find a value.
+
+Why learn DS & A?
+1. You'll write code that is both time and memory efficient
+2. Commonly asked questions involve DS&A in coding job interviews
+
+
+
+stack = LIFO data structure. Last-In First-Out
+        stores objects into a sort of "vertical tower"
+        push() to add objects to the top
+        pop() to remove objects from the top
+ 
+Uses of stacks?
+1. undo/redo features in text editors
+2. moving back/forward through browser history
+3. backtracking algorithms (maze, file directories)
+4. calling functions (call stack)
+ 
+ 
+ 
+ 
+ 
+ 
+ 

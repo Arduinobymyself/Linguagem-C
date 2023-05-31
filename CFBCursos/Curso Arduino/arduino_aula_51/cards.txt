@@ -1,0 +1,4 @@
+Controlador motor ponteH L298N = Aula 22 = https://youtu.be/f-0iAVkJe9U
+Servo = Aula 25 = https://youtu.be/DAFXa6-XIPU
+Sensor ultrassonico = Aula 28 = https://youtu.be/rahxIjfVp1A
+Leandro felipe chapa de PVC = https://www.youtube.com/watch?v=aZUvmLhFEdI
