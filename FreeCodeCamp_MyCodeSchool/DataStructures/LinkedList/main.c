@@ -3,19 +3,20 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-struct Node{ // data structure
-	int data;
-	struct Node* next;
+struct Node{ // data structure, defining a node
+	int data; // node data
+	struct Node* next; // link to the next node
 };
 
 
 
-struct Node* head; // a pointer to a node
+struct Node* head; // a pointer to a node, as global variable
 
 
 
 void Insert(int x){ // insert data at the beginning of the list
 	struct Node* temp = (struct Node*)malloc(sizeof(struct Node)); //dynamic mem alocation
+	// same as Node* temp = new Node* in c++
 	(*temp).data = x;		//same as temp->data = x
 	(*temp).next = NULL;	//same as temp->next = NULL
 	if(head != NULL) (*temp).next = head;
@@ -27,7 +28,7 @@ void InsertAt(int data, int n){ // insert data at a specific position
 	(*temp1).data = data;
 	(*temp1).next = NULL;
 	if(n == 1){ //when the list is empty
-		(*temp1).next = head;
+		(*temp1).next = head;  // same as temp1->next = head
 		head = temp1;
 		return;
 	}
@@ -35,10 +36,10 @@ void InsertAt(int data, int n){ // insert data at a specific position
 	temp2 = head;
 	int i;
 	for(i=0; i<n-2; i++){
-		temp2 = (*temp2).next;
+		temp2 = (*temp2).next; // same as temp2 = temp2->next
 	}
-	(*temp1).next = (*temp2).next;
-	(*temp2).next = temp1;
+	(*temp1).next = (*temp2).next; // same as temp1->next = temp2->next
+	(*temp2).next = temp1; // same as temp2->next = temp1
 	
 }
 
@@ -79,7 +80,7 @@ void Reverse(){
 
 
 void Print(){ // print the list
-	struct Node* temp = head; // never modify head
+ struct Node* temp = head; // never modify head
 	printf("List is: ");
 	while(temp != NULL){
 		printf("%d ", (*temp).data);
@@ -90,7 +91,6 @@ void Print(){ // print the list
 
 
 
-
 int main(int argc, char *argv[]) {
 	
 	head = NULL; //empty list
@@ -98,7 +98,7 @@ int main(int argc, char *argv[]) {
 	
 	
 	int n, i, x;
-	/*
+
 	// just ask user for the list
 	printf("how many numbers?\n ");
 	scanf("%d", &n);
@@ -108,12 +108,14 @@ int main(int argc, char *argv[]) {
 		Insert(x);
 		Print();
 	}
-	*/
+
 	
 	// just insert value at a specific position
 	//InsertAt(100,2);
 	//InsertAt(200,1);
+	//Print();
 
+	/*
 	// creats a list
 	printf("Creating a list\n");
 	Insert(2);
@@ -133,7 +135,7 @@ int main(int argc, char *argv[]) {
 	printf("Reversing\n");
 	Reverse();
 	Print();
-	
+	*/
 	
 	
 	

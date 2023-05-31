@@ -1,0 +1,3 @@
+﻿  ClassFriendFunctions.cpp
+C:\Users\ABMS-Telecom\source\repos\ClassFriendFunctions\ClassFriendFunctions.cpp(15,31): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
+  ClassFriendFunctions.vcxproj -> C:\Users\ABMS-Telecom\source\repos\ClassFriendFunctions\x64\Debug\ClassFriendFunctions.exe

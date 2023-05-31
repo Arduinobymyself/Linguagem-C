@@ -1,6 +1,7 @@
 {
   "version": "0.2.0",
   "configurations": [
+    
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
@@ -8,8 +9,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/ABMS-Telecom/Documents/GitHub/Linguagem-C/FreeCodeCamp_MyCodeSchool/CodeBeauty/Pointers",
-      "program": "c:/Users/ABMS-Telecom/Documents/GitHub/Linguagem-C/FreeCodeCamp_MyCodeSchool/CodeBeauty/Pointers/build/Debug/outDebug",
+      "cwd": "c:/Users/ABMS-Telecom/Documents/GitHub/Linguagem-C/CodeBeauty/Pointers",
+      "program": "c:/Users/ABMS-Telecom/Documents/GitHub/Linguagem-C/CodeBeauty/Pointers/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

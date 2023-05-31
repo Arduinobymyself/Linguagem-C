@@ -1,15 +1,15 @@
-# Project: ListaSequencial
+# Project: ListaDinamicaDuplamenteEncadeada
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = TestaListaSequencial.o ListaSequencial.o
-LINKOBJ  = TestaListaSequencial.o ListaSequencial.o
+OBJ      = TestaLisDinDuplEncad.o ListaDinamicaDuplamenteEncadeada.o
+LINKOBJ  = TestaLisDinDuplEncad.o ListaDinamicaDuplamenteEncadeada.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = ListaSequencial.exe
+BIN      = ListaDinamicaDuplamenteEncadeada.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
@@ -24,8 +24,8 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-TestaListaSequencial.o: TestaListaSequencial.c
-	$(CC) -c TestaListaSequencial.c -o TestaListaSequencial.o $(CFLAGS)
+TestaLisDinDuplEncad.o: TestaLisDinDuplEncad.c
+	$(CC) -c TestaLisDinDuplEncad.c -o TestaLisDinDuplEncad.o $(CFLAGS)
 
-ListaSequencial.o: ListaSequencial.c
-	$(CC) -c ListaSequencial.c -o ListaSequencial.o $(CFLAGS)
+ListaDinamicaDuplamenteEncadeada.o: ListaDinamicaDuplamenteEncadeada.c
+	$(CC) -c ListaDinamicaDuplamenteEncadeada.c -o ListaDinamicaDuplamenteEncadeada.o $(CFLAGS)

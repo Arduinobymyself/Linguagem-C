@@ -1,0 +1,2 @@
+C:\Users\ABMS-Telecom\source\repos\StructsForBeginners\x64\Debug\StructsForBeginners.exe
+C:\Users\ABMS-Telecom\Documents\GitHub\Linguagem-C\CodeBeauty\ProgrammingQuestions\StructsForBeginners\x64\Debug\StructsForBeginners.exe
